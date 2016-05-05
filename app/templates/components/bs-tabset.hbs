@@ -1,0 +1,12 @@
+<div>
+  <ul class="nav nav-tabs" role="tablist">
+    {{#each tabs as |t|}}
+    <li role="presentation">
+      <a role="tab" data-toggle="tab" action="tabSelected" href="#{{t.id}}">{{t.label}}</a>
+    </li>
+    {{/each}}
+  </ul>
+  <div class="tab-content">
+    {{yield}}
+  </div>
+</div>
